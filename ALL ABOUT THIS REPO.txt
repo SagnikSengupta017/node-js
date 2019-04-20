@@ -1,2 +1,3 @@
 Will be studying and write code to understand about node js , express js and may be react js
 Will learn mongo db
+will learn git 

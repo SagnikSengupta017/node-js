@@ -9,7 +9,7 @@ var server=http.createServer(function(request,response)
 {
     //response is used to send response to the client
 response.writeHead(200,{"Content-Type":"text/html"});
-response.write("<html><body><h1 >Creation of node js asynchronous server</h1></body></html>");
+response.write("<html><body><h1 >Hello ! Welcome to NODE JS</h1></body></html>");
 response.end();
 });
 server.listen(3011);//used to give the port number

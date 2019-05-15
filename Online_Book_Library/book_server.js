@@ -3,7 +3,7 @@ var module=require("./book");
 var url=require("url");// fetching  the buit-in url module
 var querystring=require("querystring") //fetching the querystring built-in module 
 
-
+//for get request
 var server=http.createServer(function(request,response)
 {
     

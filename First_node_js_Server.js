@@ -9,6 +9,8 @@ var http=require("http");
 var module=require("./DBModule");
 //here as we are including DBModule , it will return an exports object which is being held by the reference variable module
 var result1=module.authenticateUser("admin","admin2");
+var uc=require("upper-case");
+var a="Hello WOrld";
 //here DBModule module is added to this js file
 //in this js file we are including the DBModule module,at runtime it will check for index.js file
 var server=http.createServer(function(request,response)
@@ -18,8 +20,8 @@ var server=http.createServer(function(request,response)
     var result=module.authenticateUser("admin","admin");
     response.writeHead(200,{"Content-Type":"text/html"});
     response.write("<html><body><h1 >Hello ! Welcome to NODE JS</h1><br><br><h3>"+result+"</h3></body></html>");
-    response.end();
+    response.end("<html><body><h1>uc(a)</h1></body></html>");
 });
-server.listen(3000);//used to give the port number
+server.listen(3100);//used to give the port number
 console.log("node js server");
-console.log(result1);
+console.log(uc(result1));
